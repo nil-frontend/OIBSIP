@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+* {
+  font-family: "Lora", serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0 3rem;
+}
+
+.creator_section {
+  height: 100%;
+  width: 100%;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 1rem 0; */
+  padding: 2vh 0;
+  margin: 2vh 0;
+}
+.contant {
+  /* font-size: 2.6rem; */
+  font-size: 3vw;
+  font-weight: 700;
+}
+
+/* sliders */
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container {
+  overflow: hidden;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+  height: 70vh;
+  width: 40vw;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* sliders end*/
+
+.card {
+  position: relative;
+  /* width: 25vw;
+  height: 35vw; */
+  margin-right: 30px;
+  scroll-snap-align: start;
+  display: inline-block;
+  height: 70vh;
+  width: 40vw;
+}
+
+.card img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 100%;
+  border-radius: 3px;
+}
+.card .teachdesc {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80%;
+  padding: 2vw;
+  /* padding: 1.5vw; */
+  color: #fff;
+  background-color: rgba(99, 99, 99, 0.3);
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+.teachdesc h1 {
+  overflow: hidden;
+  font-size: 2.1vw;
+  line-height: 2.1vw;
+  font-weight: 600;
+}
+.teachdesc h4 {
+  text-transform: capitalize;
+  margin: 0.5vw 0;
+  font-size: 1vw;
+  font-weight: 300;
+  position: relative;
+  white-space: initial;
+}
+.teachdesc h5 {
+  font-weight: 300;
+  font-size: 1.3vw;
+
+  display: inline-flex;
+  width: 100%;
+}
+
+.teachdesc .social-media a{
+  color: #fff;
+}
+.teachdesc .social-media{
+  margin-left: auto;
+}
